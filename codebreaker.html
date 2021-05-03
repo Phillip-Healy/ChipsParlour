@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Parlour</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <ul id="nav">
+            <li><a href="index.html" class="nav-bar-item" role="navigation">Home</a></li>
+            <li><a href="codebreaker.html" class="nav-bar-item" id="active" role="navigation">Games</a></li>
+            <li><a href="contact.html" class="nav-bar-item" role="navigation">Contact</a></li>
+            <li><a href="about.html" class="nav-bar-item" role="navigation">About</a></li>
+        </ul>
+        <h1>Welcome To Chips Parlour</h1>
+        <h2>What Would You Like To Play?</h2>
+            <div id="game-container">
+                <button class="btn" id="start-game">Start Game!</button><br>
+                <div id="difficulty">Difficulty: <br>
+                    <input type="radio" id="easy" name="difficulty" value="easy" checked>
+                    <label for="easy">Easy</label><br>
+                    <input type="radio" id="intermediate" name="difficulty" value="intermediate">
+                    <label for="intermediate">Intermediate</label><br>
+                    <input type="radio" id="expert" name="difficulty" value="expert">
+                    <label for="expert">Expert</label><br>
+                </div>
+                <button id="tutorial">How To Play?</button>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
