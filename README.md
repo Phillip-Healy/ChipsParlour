@@ -14,7 +14,7 @@ As a novice player I want to be able to see how to play.
 As a fellow developer I want to be able to contact the dev for collaboration.
 As an enthusiast I want to be able to contact the dev to leave a review.
 
-Wireframes: 
+Wireframes: https://imgur.com/a/AbR6AxF
 
 ## Features
 
@@ -33,7 +33,14 @@ Another feature idea
 ## Technologies Used
 
 ### JQuery
-- The project uses JQuery to simplify DOM manipulation.
+- The project uses JQuery to simplify DOM manipulation, and is the primary interactivity of the site
+
+### Bootstrap
+- HTML/CSS framework for developing mobile-first front end.
+
+### Balsamiq
+- Wireframing tool used to create mock ups of each page for each media size.
+
 
 ## Testing
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
@@ -50,21 +57,21 @@ For any scenarios that have not been automated, test the user stories manually a
 - In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 ### Bugs Encountered
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Friday 30/4 - had a power outage that wiped a couple of hours of work.
+
 
 ## Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 ## Credits
-Content
+### Content
+Code Breaker is a generic game modelled after Mastermind; a wooden peg boardgame released by Mordekai Meirowitz in the 1970s. 
+Though the origin of the game comes from at least the 1800s on pen and  paper under the name "Bulls and Cows".
+https://en.wikipedia.org/wiki/Mastermind_(board_game)
 
-## Media
+### Media
+All images created by me.
 
-## Acknowledgements
+### Acknowledgements
+Originally I was going to do a choose your own adventure, but my wife talked me down from creating 800+ branches of story.
+She is my greatest inspiration and helps to anchor me to the earth when my head is in the clouds.
