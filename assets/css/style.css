@@ -16,7 +16,7 @@ Purple: #601a4a
 /* --------- Global style */
 
 body {
-    background-color: white;
+    background-color: whitesmoke;
     font-family: "Oswald", sans-serif;
     color: #ff5103;
     text-align: center;
@@ -34,10 +34,13 @@ body {
 }
 
 #nav {
-    float: right;
     list-style-type: none;
-    width: 100px;
-    background-color: slategray;
+    width: 15%;
+    min-width: 100px;
+    background-color: rgb(72, 74, 77);
+    padding: 0;
+    position: fixed;
+    right: 0;
 }
 
 .nav-bar-item {
@@ -45,12 +48,42 @@ body {
     color: whitesmoke;
     font-family: "Oswald", sans-serif;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     font-size: 22px;
+    width: 100%;
+    transition: 1s;
+}
+
+.nav-bar-item:hover {
+    color: rgb(72, 74, 77);
+    background-color: whitesmoke;
 }
 
 #active {
     text-decoration: underline;
-    color: wheat;
+    color: rgb(112, 243, 199);
+    text-align: left;
+}
+
+#active:hover {
+    color: rgb(72, 74, 77);
+}
+
+#game-container {
     text-align: center;
+    max-width: 30%;
+    max-height: 300px;
+    margin-left: 35%;
+}
+
+#game-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#game-container a {
+    text-decoration: none;
+    color: #ff5103;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
 }
