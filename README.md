@@ -28,7 +28,10 @@ it will be highlighted in green and you can try again up to 8 times, after which
 Easy difficulty is 5 colours, medium is 6, hard is 7.
 
 ### Future Features
-Another feature idea
+I will be adding games to this page periodically. I've ideas for dozens of games, from card games, 
+board games, puzzles, role play sims, choose your own adventures, and more!
+I will also be updating the site to be as user friendly to anyone with accessibility issues, including Dark Mode, 
+Colourblind mode, screen reader friendly, keyboard only controls, etc.
 
 ## Technologies Used
 
