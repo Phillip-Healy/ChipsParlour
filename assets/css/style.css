@@ -5,6 +5,7 @@
 
 Red: #b32727
 yellow: #e6e61d
+Orange: #ff5103
 green: #a3ec11
 Blue: #074dff
 Purple: #601a4a
@@ -17,6 +18,17 @@ Purple: #601a4a
 body {
     background-color: white;
     font-family: "Oswald", sans-serif;
-    color: #513c53;
+    color: #ff5103;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ---------- containers */
+
+#container {
+    height: 100vh;
+    width: 100%;
 }
