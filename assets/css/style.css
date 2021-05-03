@@ -32,3 +32,25 @@ body {
     height: 100vh;
     width: 100%;
 }
+
+#nav {
+    float: right;
+    list-style-type: none;
+    width: 100px;
+    background-color: slategray;
+}
+
+.nav-bar-item {
+    display: block;
+    color: whitesmoke;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    text-align: right;
+    font-size: 22px;
+}
+
+#active {
+    text-decoration: underline;
+    color: wheat;
+    text-align: center;
+}
