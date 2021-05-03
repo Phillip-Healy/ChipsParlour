@@ -13,7 +13,7 @@ As a competitive player I want to see my high scores.
 As a novice player I want to be able to see how to play.
 As a fellow developer I want to be able to contact the dev for collaboration.
 As an enthusiast I want to be able to contact the dev to leave a review.
-
+As a colourblind user I wish the games would be accomodating to my needs.
 Wireframes: https://imgur.com/a/AbR6AxF
 
 ## Features
@@ -26,6 +26,11 @@ Code Breaker is a puzzle game where 4 coloured nodes can be selected via clicks 
 it will be highlighted in green and you can try again up to 8 times, after which you fail and the code is revealed. Get them all correct to win!
 
 Easy difficulty is 5 colours, medium is 6, hard is 7.
+I have used colours that are rich and high in contrast to be both aesthetically pleasing to colour-seeing users, 
+but also differentiated to colourblind users.
+I adapted the palletes found on https://venngage.com/ to be used across the site. 
+
+The colours chosen should be preceptible for the game to be played by people with Protanopia, Deuteranopia, and Tritanopia.
 
 ### Future Features
 I will be adding games to this page periodically. I've ideas for dozens of games, from card games, 

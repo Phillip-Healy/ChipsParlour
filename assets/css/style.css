@@ -1,11 +1,22 @@
 /* --------- Imports */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap'); 
 
+/* -------- color pallete 
+
+Red: #b32727
+yellow: #e6e61d
+green: #a3ec11
+Blue: #074dff
+Purple: #601a4a
+
+------------- */
+
+
 /* --------- Global style */
 
 body {
     background-color: white;
     font-family: "Oswald", sans-serif;
-    color: #7b5e7e;
+    color: #513c53;
     text-align: center;
 }
