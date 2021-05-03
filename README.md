@@ -9,11 +9,13 @@ Minimum Viable Project scope is 1 game (Code Breaker) with 3 difficulties.
 As a game creator I want a site to put all my parlour type games on.
 As a player I want to be able to play fun games.
 As a pro gamer I want to be able to challenge myself with higher difficulties.
-As a competitive player I want to see my high scores.
+As a competitive player I need to see my high scores.
 As a novice player I want to be able to see how to play.
-As a fellow developer I want to be able to contact the dev for collaboration.
+As a fellow developer I would like to be able to contact the dev for collaboration.
 As an enthusiast I want to be able to contact the dev to leave a review.
 As a colourblind user I wish the games would be accomodating to my needs.
+
+
 Wireframes: https://imgur.com/a/AbR6AxF
 
 ## Features
