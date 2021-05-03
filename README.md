@@ -1,29 +1,31 @@
 # Chips Parlour
-Phillip Healy's Milestone Project 2: Interactive Front End Development. A place to play parlour games online. Minimum Viable Project scope is 1 game (CodeBreaker) with 3 difficulties.
-CodeBreaker is a puzzle game where 4 coloured nodes can be selected and tested against a secret code. If you get a colour placed correctly it will be highlighted in green and 
-you can try again up to 8 times, after which you fail and the code is revealed. Get them all right to win!
-
-Easy difficulty is 3 colours, medium is 4, hard is 5.
+Phillip Healy's Milestone Project 2: Interactive Front End Development. A place to play parlour games online. 
+Minimum Viable Project scope is 1 game (Code Breaker) with 3 difficulties.
 
 2 scores will be recorded; fastest code break, and longest streak.
 
 ## UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+As a game creator I want a site to put all my parlour type games on.
+As a player I want to be able to play fun games.
+As a pro gamer I want to be able to challenge myself with higher difficulties.
+As a competitive player I want to see my high scores.
+As a novice player I want to be able to see how to play.
+As a fellow developer I want to be able to contact the dev for collaboration.
+As an enthusiast I want to be able to contact the dev to leave a review.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+Wireframes: 
 
 ## Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 ### Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+This is a site on which to play a collection of games. Initially there is a single game with 3 difficulties: Code Breaker.
+
+Code Breaker is a puzzle game where 4 coloured nodes can be selected via clicks or taps and tested against a secret (randomly generated) code. If you get a colour placed correctly 
+it will be highlighted in green and you can try again up to 8 times, after which you fail and the code is revealed. Get them all correct to win!
+
+Easy difficulty is 5 colours, medium is 6, hard is 7.
 
 ### Future Features
 Another feature idea
