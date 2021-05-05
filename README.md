@@ -68,7 +68,7 @@ For any scenarios that have not been automated, test the user stories manually a
 
 ### Bugs Encountered
 Friday 30/4 - had a power outage that wiped a couple of hours of work.
-
+Wednesday 5/5 - difficulty buttons were stuck in infinite for loop, breaking it early wasn't returning a value I could use. Will rethink how it's implemented.
 
 ## Deployment
 
