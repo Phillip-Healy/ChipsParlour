@@ -10,7 +10,33 @@ green: #a3ec11
 Blue: #074dff
 Purple: #601a4a
 
+
+
 ------------- */
+
+.Red {
+    background-color: #b32727;
+}
+
+.yellow {
+    background-color: #e6e61d;
+}
+
+.Orange {
+    background-color: #ff5103;
+}
+
+.green {
+    background-color: #a3ec11;
+}
+
+.Blue {
+    background-color: #074dff;
+}
+
+.Purple {
+    background-color: #601a4a;
+}
 
 
 /* --------- Global style */
