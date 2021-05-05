@@ -139,3 +139,32 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+#gameBoard {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 35%;
+    margin-left: 30%;
+}
+
+#gameBoard th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+#gameBoard td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.gamePeg {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+}
