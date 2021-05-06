@@ -102,7 +102,7 @@ function roundOne() {
             }
         }
     });
-    $('.breaker').click(function() {
+    $('.breaker').click(function(event) {
         if (ai == aa) {
             $('#a1').parent().css('background-color', 'green');
             ar = 1;
@@ -140,9 +140,9 @@ function roundOne() {
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
-            $('.breaker').removeClass('breaker').addClass('breakerTwo')
+            $('.breaker').css('visibility', 'hidden');
+            $('.breakerTwo').css('visibility', 'visible');
             roundTwo();
-            return false;
         }
     });
 };
@@ -252,7 +252,691 @@ function roundTwo() {
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerTwo').css('visibility', 'hidden');
+            $('.breakerThree').css('visibility', 'visible');
             roundThree();
         }
     });
 };
+
+function roundThree() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a3').click(function() {
+        if (ai === 0) {
+            $('#a3').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a3').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b3').click(function() {
+        if (bi === 0) {
+            $('#b3').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b3').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c3').click(function() {
+        if (ci === 0) {
+            $('#c3').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c3').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d3').click(function() {
+        if (di === 0) {
+            $('#d3').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d3').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerThree').click(function() {
+        if (ai == aa) {
+            $('#a3').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a3').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b3').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b3').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c3').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c3').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d3').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d3').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerThree').css('visibility', 'hidden');
+            $('.breakerFour').css('visibility', 'visible');
+            roundFour();
+        }
+    });
+};
+
+function roundFour() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a4').click(function() {
+        if (ai === 0) {
+            $('#a4').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a4').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b4').click(function() {
+        if (bi === 0) {
+            $('#b4').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b4').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c4').click(function() {
+        if (ci === 0) {
+            $('#c4').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c4').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d4').click(function() {
+        if (di === 0) {
+            $('#d4').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d4').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerFour').click(function() {
+        if (ai == aa) {
+            $('#a4').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a4').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b4').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b4').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c4').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c4').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d4').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d4').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerFour').css('visibility', 'hidden');
+            $('.breakerFive').css('visibility', 'visible');
+            roundFive();
+        }
+    });
+};
+
+function roundFive() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a5').click(function() {
+        if (ai === 0) {
+            $('#a5').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a5').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b5').click(function() {
+        if (bi === 0) {
+            $('#b5').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b5').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c5').click(function() {
+        if (ci === 0) {
+            $('#c5').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c5').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d5').click(function() {
+        if (di === 0) {
+            $('#d5').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d5').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerFive').click(function() {
+        if (ai == aa) {
+            $('#a5').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a5').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b5').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b5').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c5').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c5').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d5').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d5').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerFive').css('visibility', 'hidden');
+            $('.breakerSix').css('visibility', 'visible');
+            roundSix();
+        }
+    });
+};
+
+function roundSix() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a6').click(function() {
+        if (ai === 0) {
+            $('#a6').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a6').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b6').click(function() {
+        if (bi === 0) {
+            $('#b6').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b6').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c6').click(function() {
+        if (ci === 0) {
+            $('#c6').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c6').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d6').click(function() {
+        if (di === 0) {
+            $('#d6').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d6').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerSix').click(function() {
+        if (ai == aa) {
+            $('#a6').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a6').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b6').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b6').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c6').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c6').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d6').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d6').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerSix').css('visibility', 'hidden');
+            $('.breakerSeven').css('visibility', 'visible');
+            roundSeven();
+        }
+    });
+};
+
+function roundSeven() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a7').click(function() {
+        if (ai === 0) {
+            $('#a7').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a7').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b7').click(function() {
+        if (bi === 0) {
+            $('#b7').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b7').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c7').click(function() {
+        if (ci === 0) {
+            $('#c7').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c7').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d7').click(function() {
+        if (di === 0) {
+            $('#d7').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d7').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerSeven').click(function() {
+        if (ai == aa) {
+            $('#a7').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a7').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b7').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b7').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c7').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c7').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d7').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d7').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerSeven').css('visibility', 'hidden');
+            $('.breakerEight').css('visibility', 'visible');
+            roundEight();
+        }
+    });
+};
+
+function roundEight() {
+    var ai = 0;
+    var bi = 0;
+    var ci = 0;
+    var di = 0;
+
+
+    $('#a8').click(function() {
+        if (ai === 0) {
+            $('#a8').removeClass('purple').addClass(colorArray[ai]);
+                    ai++;
+        }
+        else {
+            $('#a8').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
+            if (ai < 5) {
+                ai++;
+            }
+            else {
+                ai = 0;
+            }
+        }
+    });
+    $('#b8').click(function() {
+        if (bi === 0) {
+            $('#b8').removeClass('purple').addClass(colorArray[bi]);
+                    bi++;
+        }
+        else {
+            $('#b8').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
+            if (bi < 5) {
+                bi++;
+            }
+            else {
+                bi = 0;
+            }
+        }
+    });
+    $('#c8').click(function() {
+        if (ci === 0) {
+            $('#c8').removeClass('purple').addClass(colorArray[ci]);
+                    ci++;
+        }
+        else {
+            $('#c8').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
+            if (ci < 5) {
+                ci++;
+            }
+            else {
+                ci = 0;
+            }
+        }
+    });
+    $('#d8').click(function() {
+        if (di === 0) {
+            $('#d8').removeClass('purple').addClass(colorArray[di]);
+                    di++;
+        }
+        else {
+            $('#d8').removeClass(colorArray[di-1]).addClass(colorArray[di]);
+            if (di < 5) {
+                di++;
+            }
+            else {
+                di = 0;
+            }
+        }
+    });
+    $('.breakerEight').click(function() {
+        if (ai == aa) {
+            $('#a8').parent().css('background-color', 'green');
+            ar = 1;
+        }
+        else {
+            $('#a8').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b8').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b8').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c8').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c8').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d8').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d8').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            $('.breakerEight').css('visibility', 'hidden');
+            gameOver();
+        }
+    });
+};
+
+function gameOver() {
+    var sollution = ['purple', 'red', 'yellow', 'orange', 'green', 'blue'];
+    var answer = [];
+    answer += sollution[aa];
+    answer += sollution[bb];
+    answer += sollution[cc];
+    answer += sollution[dd];
+    alert("Sorry, you didn't win this time. The correct sollution was: " + answer[0] + " / " + answer[1] + " / " + answer[2] + " / " + answer[3] + ". Try Again!");
+    
+}
