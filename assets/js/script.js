@@ -937,6 +937,6 @@ function gameOver() {
     answer += sollution[bb];
     answer += sollution[cc];
     answer += sollution[dd];
-    alert("Sorry, you didn't win this time. The correct sollution was: " + answer[0] + " / " + answer[1] + " / " + answer[2] + " / " + answer[3] + ". Try Again!");
-    
+    alert("Sorry, you didn't win this time. The correct sollution was: " + answer[0] + " " + answer[1] + " " + answer[2] + " " + answer[3] + ". Try Again!");
+    $('#post-game').html('<a href="codebreaker.html" id="retry">Try Again?</a>');
 }

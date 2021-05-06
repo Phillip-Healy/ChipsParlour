@@ -349,3 +349,21 @@ body {
     background-color: antiquewhite;
     color: #601a4a;
 }
+
+#retry {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #ff5103;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+#retry:hover {
+    background-color: antiquewhite;
+    color: #ff5103;
+}
