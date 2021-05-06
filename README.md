@@ -67,7 +67,11 @@ For any scenarios that have not been automated, test the user stories manually a
 - In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 ### Bugs Encountered
-Friday 30/4 - had a power outage that wiped a couple of hours of work.
+Friday 30/4 - Had a power outage that wiped a couple of hours of work. Save and commit often.
+Wednesday 5/5 - Difficulty buttons were stuck in infinite for loop, breaking it early wasn't returning a value I could use. Will rethink how it's implemented.
+Thursday 6/5 - DecretCode won't provide values to check against players choice inside function.
+Thursday 6/5 - Clicking breaker button checks each line regardless of the round.
+             - Even after changes id or class of button it still gets listened for in the previous function under the old name.
 
 
 ## Deployment

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chips Parlour</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
@@ -19,18 +22,21 @@
         <h2>What Would You Like To Play?</h2>
             <div id="game-container">
                 <button class="btn" id="start-game">Start Game!</button><br>
-                <div id="difficulty">Difficulty: <br>
-                    <input type="radio" id="easy" name="difficulty" value="easy" checked>
-                    <label for="easy">Easy</label><br>
-                    <input type="radio" id="intermediate" name="difficulty" value="intermediate">
-                    <label for="intermediate">Intermediate</label><br>
-                    <input type="radio" id="expert" name="difficulty" value="expert">
-                    <label for="expert">Expert</label><br>
+                <div id="how-to">
+                    <button id="tutorial" class="btn">How To Play?</button>
                 </div>
-                <button id="tutorial">How To Play?</button>
-        </div>
+            </div>
+            <button class="btn breaker">Try It!</button>
+            <button class="btn breakerTwo">Try It!</button>
+            <button class="btn breakerThree">Try It!</button>
+            <button class="btn breakerFour">Try It!</button>
+            <button class="btn breakerFive">Try It!</button>
+            <button class="btn breakerSix">Try It!</button>
+            <button class="btn breakerSeven">Try It!</button>
+            <button class="btn breakerEight">Try It!</button>
+            <div id="post-game"></div>
     </div>
 
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

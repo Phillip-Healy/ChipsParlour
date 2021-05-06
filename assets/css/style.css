@@ -10,7 +10,33 @@ green: #a3ec11
 Blue: #074dff
 Purple: #601a4a
 
+
+
 ------------- */
+
+.red {
+    background-color: #b32727;
+}
+
+.yellow {
+    background-color: #e6e61d;
+}
+
+.orange {
+    background-color: #ff5103;
+}
+
+.green {
+    background-color: #a3ec11;
+}
+
+.blue {
+    background-color: #074dff;
+}
+
+.purple {
+    background-color: #601a4a;
+}
 
 
 /* --------- Global style */
@@ -24,14 +50,7 @@ body {
     padding: 0;
 }
 
-
-
-/* ---------- containers */
-
-#container {
-    height: 100vh;
-    width: 100%;
-}
+/* ---------- Navigation */
 
 #nav {
     list-style-type: none;
@@ -69,6 +88,14 @@ body {
     color: rgb(72, 74, 77);
 }
 
+
+/* ---------- containers */
+
+#container {
+    height: 100vh;
+    width: 100%;
+}
+
 #game-img-container {
     text-align: center;
     max-width: 30%;
@@ -95,6 +122,8 @@ body {
     font-size: 22px;
     text-align: center;
 }
+
+/* ------------- Game Boards */
 
 #difficulty {
     text-align: center;
@@ -126,4 +155,215 @@ body {
 #tutorial:hover {
     background-color: #ff5103;
     color: rgb(255, 255, 255);
+}
+
+#ghow-to {
+    text-align: center;
+    max-width: 30%;
+    max-height: 300px;
+    margin-left: 35%;
+}
+
+#how-to img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gameBoard {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#gameBoard th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+#gameBoard td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.gamePeg {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.breaker {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breaker:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerTwo {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerTwo:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerThree {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerThree:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerFour {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerFour:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerFive {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerFive:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerSix {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerSix:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerSeven {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerSeven:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerEight {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerEight:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+#retry {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #ff5103;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+#retry:hover {
+    background-color: antiquewhite;
+    color: #ff5103;
 }
