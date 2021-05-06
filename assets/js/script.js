@@ -50,7 +50,7 @@ function roundOne() {
         }
         else {
             $('#a1').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -65,7 +65,7 @@ function roundOne() {
         }
         else {
             $('#b1').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -80,7 +80,7 @@ function roundOne() {
         }
         else {
             $('#c1').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -95,7 +95,7 @@ function roundOne() {
         }
         else {
             $('#d1').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -166,7 +166,7 @@ function roundTwo() {
         }
         else {
             $('#a2').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -181,7 +181,7 @@ function roundTwo() {
         }
         else {
             $('#b2').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -196,7 +196,7 @@ function roundTwo() {
         }
         else {
             $('#c2').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -211,7 +211,7 @@ function roundTwo() {
         }
         else {
             $('#d2').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -282,7 +282,7 @@ function roundThree() {
         }
         else {
             $('#a3').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -297,7 +297,7 @@ function roundThree() {
         }
         else {
             $('#b3').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -312,7 +312,7 @@ function roundThree() {
         }
         else {
             $('#c3').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -327,7 +327,7 @@ function roundThree() {
         }
         else {
             $('#d3').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -398,7 +398,7 @@ function roundFour() {
         }
         else {
             $('#a4').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -413,7 +413,7 @@ function roundFour() {
         }
         else {
             $('#b4').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -428,7 +428,7 @@ function roundFour() {
         }
         else {
             $('#c4').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -443,7 +443,7 @@ function roundFour() {
         }
         else {
             $('#d4').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -514,7 +514,7 @@ function roundFive() {
         }
         else {
             $('#a5').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -529,7 +529,7 @@ function roundFive() {
         }
         else {
             $('#b5').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -544,7 +544,7 @@ function roundFive() {
         }
         else {
             $('#c5').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -559,7 +559,7 @@ function roundFive() {
         }
         else {
             $('#d5').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -630,7 +630,7 @@ function roundSix() {
         }
         else {
             $('#a6').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -645,7 +645,7 @@ function roundSix() {
         }
         else {
             $('#b6').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -660,7 +660,7 @@ function roundSix() {
         }
         else {
             $('#c6').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -675,7 +675,7 @@ function roundSix() {
         }
         else {
             $('#d6').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -742,11 +742,11 @@ function roundSeven() {
     $('#a7').click(function() {
         if (ai === 0) {
             $('#a7').removeClass('purple').addClass(colorArray[ai]);
-                    ai++;
+                ai++;
         }
         else {
             $('#a7').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -757,11 +757,11 @@ function roundSeven() {
     $('#b7').click(function() {
         if (bi === 0) {
             $('#b7').removeClass('purple').addClass(colorArray[bi]);
-                    bi++;
+                bi++;
         }
         else {
             $('#b7').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -776,7 +776,7 @@ function roundSeven() {
         }
         else {
             $('#c7').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -791,7 +791,7 @@ function roundSeven() {
         }
         else {
             $('#d7').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
@@ -862,7 +862,7 @@ function roundEight() {
         }
         else {
             $('#a8').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 6) {
+            if (ai < 5) {
                 ai++;
             }
             else {
@@ -877,7 +877,7 @@ function roundEight() {
         }
         else {
             $('#b8').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 6) {
+            if (bi < 5) {
                 bi++;
             }
             else {
@@ -892,7 +892,7 @@ function roundEight() {
         }
         else {
             $('#c8').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 6) {
+            if (ci < 5) {
                 ci++;
             }
             else {
@@ -907,7 +907,7 @@ function roundEight() {
         }
         else {
             $('#d8').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 6) {
+            if (di < 5) {
                 di++;
             }
             else {
