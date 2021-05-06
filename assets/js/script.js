@@ -21,12 +21,10 @@ var dr = 0;
 
     
 // runs game on click of start-game button. creates a secret code in numbers which will be checked against as player attempts to break the code.
-//1=red, 2=yellow, 3=orange, 4=green, 5=blue, 0=purple
+//0=red, 1=yellow, 2=orange, 3=green, 4=blue, 5=purple
 //then calls roundOne and makes breaker button visible.
 function runGame() {
     $('#game-container').html('<table id="gameBoard"><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td><div class="gamePeg peg1" id="a1"></div></td><td><div class="gamePeg peg1" id="b1"></div></td><td><div class="gamePeg peg1" id="c1"></div></td><td><div class="gamePeg peg1" id="d1"></div></td></tr><tr><td><div class="gamePeg peg2" id="a2"></div></td><td><div class="gamePeg peg2" id="b2"></div></td><td><div class="gamePeg peg2" id="c2"></div></td><td><div class="gamePeg peg2" id="d2"></div></td></tr><tr><td><div class="gamePeg" id="a3"></div></td><td><div class="gamePeg" id="b3"></div></td><td><div class="gamePeg" id="c3"></div></td><td><div class="gamePeg" id="d3"></div></td></tr><tr><td><div class="gamePeg" id="a4"></div></td><td><div class="gamePeg" id="b4"></div></td><td><div class="gamePeg" id="c4"></div></td><td><div class="gamePeg" id="d4"></div></td></tr><tr><td><div class="gamePeg" id="a5"></div></td><td><div class="gamePeg" id="b5"></div></td><td><div class="gamePeg" id="c5"></div></td><td><div class="gamePeg" id="d5"></div></td></tr><tr><td><div class="gamePeg" id="a6"></div></td><td><div class="gamePeg" id="b6"></div></td><td><div class="gamePeg" id="c6"></div></td><td><div class="gamePeg" id="d6"></div></td></tr><tr><td><div class="gamePeg" id="a7"></div></td><td><div class="gamePeg" id="b7"></div></td><td><div class="gamePeg" id="c7"></div></td><td><div class="gamePeg" id="d7"></div></td></tr><tr><td><div class="gamePeg" id="a8"></div></td><td><div class="gamePeg" id="b8"></div></td><td><div class="gamePeg" id="c8"></div></td><td><div class="gamePeg" id="d8"></div></td></tr></table>');
-
-    alert(secretCode);
     roundOne();
     $('.breaker').css('visibility', 'visible');
 };
@@ -40,16 +38,19 @@ function roundOne() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a1').addClass(colorArray[0]);
+    $('#b1').addClass(colorArray[0]);
+    $('#c1').addClass(colorArray[0]);
+    $('#d1').addClass(colorArray[0]);
 
     $('#a1').click(function() {
         if (ai === 0) {
-            $('#a1').removeClass('purple').addClass(colorArray[ai]);
+            $('#a1').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a1').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -59,12 +60,12 @@ function roundOne() {
     });
     $('#b1').click(function() {
         if (bi === 0) {
-            $('#b1').removeClass('purple').addClass(colorArray[bi]);
+            $('#b1').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b1').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -74,12 +75,12 @@ function roundOne() {
     });
     $('#c1').click(function() {
         if (ci === 0) {
-            $('#c1').removeClass('purple').addClass(colorArray[ci]);
+            $('#c1').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c1').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -89,12 +90,12 @@ function roundOne() {
     });
     $('#d1').click(function() {
         if (di === 0) {
-            $('#d1').removeClass('purple').addClass(colorArray[di]);
+            $('#d1').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d1').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -136,7 +137,8 @@ function roundOne() {
             dr = 0;
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
-            alert("You Win!!!");
+            alert("AMAZING! You won first try!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -152,16 +154,19 @@ function roundTwo() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a2').addClass(colorArray[0]);
+    $('#b2').addClass(colorArray[0]);
+    $('#c2').addClass(colorArray[0]);
+    $('#d2').addClass(colorArray[0]);
 
     $('#a2').click(function() {
         if (ai === 0) {
-            $('#a2').removeClass('purple').addClass(colorArray[ai]);
+            $('#a2').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a2').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -171,12 +176,12 @@ function roundTwo() {
     });
     $('#b2').click(function() {
         if (bi === 0) {
-            $('#b2').removeClass('purple').addClass(colorArray[bi]);
+            $('#b2').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b2').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -186,12 +191,12 @@ function roundTwo() {
     });
     $('#c2').click(function() {
         if (ci === 0) {
-            $('#c2').removeClass('purple').addClass(colorArray[ci]);
+            $('#c2').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c2').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -201,12 +206,12 @@ function roundTwo() {
     });
     $('#d2').click(function() {
         if (di === 0) {
-            $('#d2').removeClass('purple').addClass(colorArray[di]);
+            $('#d2').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d2').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -249,6 +254,7 @@ function roundTwo() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -264,16 +270,19 @@ function roundThree() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a3').addClass(colorArray[0]);
+    $('#b3').addClass(colorArray[0]);
+    $('#c3').addClass(colorArray[0]);
+    $('#d3').addClass(colorArray[0]);
 
     $('#a3').click(function() {
         if (ai === 0) {
-            $('#a3').removeClass('purple').addClass(colorArray[ai]);
+            $('#a3').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a3').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -283,12 +292,12 @@ function roundThree() {
     });
     $('#b3').click(function() {
         if (bi === 0) {
-            $('#b3').removeClass('purple').addClass(colorArray[bi]);
+            $('#b3').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b3').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -298,12 +307,12 @@ function roundThree() {
     });
     $('#c3').click(function() {
         if (ci === 0) {
-            $('#c3').removeClass('purple').addClass(colorArray[ci]);
+            $('#c3').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c3').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -313,12 +322,12 @@ function roundThree() {
     });
     $('#d3').click(function() {
         if (di === 0) {
-            $('#d3').removeClass('purple').addClass(colorArray[di]);
+            $('#d3').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d3').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -361,6 +370,7 @@ function roundThree() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -376,16 +386,19 @@ function roundFour() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a4').addClass(colorArray[0]);
+    $('#b4').addClass(colorArray[0]);
+    $('#c4').addClass(colorArray[0]);
+    $('#d4').addClass(colorArray[0]);
 
     $('#a4').click(function() {
         if (ai === 0) {
-            $('#a4').removeClass('purple').addClass(colorArray[ai]);
+            $('#a4').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a4').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -395,12 +408,12 @@ function roundFour() {
     });
     $('#b4').click(function() {
         if (bi === 0) {
-            $('#b4').removeClass('purple').addClass(colorArray[bi]);
+            $('#b4').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b4').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -410,12 +423,12 @@ function roundFour() {
     });
     $('#c4').click(function() {
         if (ci === 0) {
-            $('#c4').removeClass('purple').addClass(colorArray[ci]);
+            $('#c4').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c4').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -425,12 +438,12 @@ function roundFour() {
     });
     $('#d4').click(function() {
         if (di === 0) {
-            $('#d4').removeClass('purple').addClass(colorArray[di]);
+            $('#d4').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d4').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -473,6 +486,7 @@ function roundFour() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -488,16 +502,19 @@ function roundFive() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a5').addClass(colorArray[0]);
+    $('#b5').addClass(colorArray[0]);
+    $('#c5').addClass(colorArray[0]);
+    $('#d5').addClass(colorArray[0]);
 
     $('#a5').click(function() {
         if (ai === 0) {
-            $('#a5').removeClass('purple').addClass(colorArray[ai]);
+            $('#a5').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a5').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -507,12 +524,12 @@ function roundFive() {
     });
     $('#b5').click(function() {
         if (bi === 0) {
-            $('#b5').removeClass('purple').addClass(colorArray[bi]);
+            $('#b5').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b5').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -522,12 +539,12 @@ function roundFive() {
     });
     $('#c5').click(function() {
         if (ci === 0) {
-            $('#c5').removeClass('purple').addClass(colorArray[ci]);
+            $('#c5').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c5').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -537,12 +554,12 @@ function roundFive() {
     });
     $('#d5').click(function() {
         if (di === 0) {
-            $('#d5').removeClass('purple').addClass(colorArray[di]);
+            $('#d5').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d5').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -585,6 +602,7 @@ function roundFive() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -600,16 +618,19 @@ function roundSix() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a6').addClass(colorArray[0]);
+    $('#b6').addClass(colorArray[0]);
+    $('#c6').addClass(colorArray[0]);
+    $('#d6').addClass(colorArray[0]);
 
     $('#a6').click(function() {
         if (ai === 0) {
-            $('#a6').removeClass('purple').addClass(colorArray[ai]);
+            $('#a6').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a6').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -619,12 +640,12 @@ function roundSix() {
     });
     $('#b6').click(function() {
         if (bi === 0) {
-            $('#b6').removeClass('purple').addClass(colorArray[bi]);
+            $('#b6').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b6').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -634,12 +655,12 @@ function roundSix() {
     });
     $('#c6').click(function() {
         if (ci === 0) {
-            $('#c6').removeClass('purple').addClass(colorArray[ci]);
+            $('#c6').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c6').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -649,12 +670,12 @@ function roundSix() {
     });
     $('#d6').click(function() {
         if (di === 0) {
-            $('#d6').removeClass('purple').addClass(colorArray[di]);
+            $('#d6').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d6').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -697,6 +718,7 @@ function roundSix() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -712,16 +734,19 @@ function roundSeven() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a7').addClass(colorArray[0]);
+    $('#b7').addClass(colorArray[0]);
+    $('#c7').addClass(colorArray[0]);
+    $('#d7').addClass(colorArray[0]);
 
     $('#a7').click(function() {
         if (ai === 0) {
-            $('#a7').removeClass('purple').addClass(colorArray[ai]);
+            $('#a7').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a7').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -731,12 +756,12 @@ function roundSeven() {
     });
     $('#b7').click(function() {
         if (bi === 0) {
-            $('#b7').removeClass('purple').addClass(colorArray[bi]);
+            $('#b7').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b7').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -746,12 +771,12 @@ function roundSeven() {
     });
     $('#c7').click(function() {
         if (ci === 0) {
-            $('#c7').removeClass('purple').addClass(colorArray[ci]);
+            $('#c7').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c7').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -761,12 +786,12 @@ function roundSeven() {
     });
     $('#d7').click(function() {
         if (di === 0) {
-            $('#d7').removeClass('purple').addClass(colorArray[di]);
+            $('#d7').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d7').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -809,6 +834,7 @@ function roundSeven() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
@@ -824,16 +850,19 @@ function roundEight() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-
+    $('#a8').addClass(colorArray[0]);
+    $('#b8').addClass(colorArray[0]);
+    $('#c8').addClass(colorArray[0]);
+    $('#d8').addClass(colorArray[0]);
 
     $('#a8').click(function() {
         if (ai === 0) {
-            $('#a8').removeClass('purple').addClass(colorArray[ai]);
+            $('#a8').removeClass('red').addClass(colorArray[ai]);
                     ai++;
         }
         else {
             $('#a8').removeClass(colorArray[ai-1]).addClass(colorArray[ai]);
-            if (ai < 5) {
+            if (ai < 6) {
                 ai++;
             }
             else {
@@ -843,12 +872,12 @@ function roundEight() {
     });
     $('#b8').click(function() {
         if (bi === 0) {
-            $('#b8').removeClass('purple').addClass(colorArray[bi]);
+            $('#b8').removeClass('red').addClass(colorArray[bi]);
                     bi++;
         }
         else {
             $('#b8').removeClass(colorArray[bi-1]).addClass(colorArray[bi]);
-            if (bi < 5) {
+            if (bi < 6) {
                 bi++;
             }
             else {
@@ -858,12 +887,12 @@ function roundEight() {
     });
     $('#c8').click(function() {
         if (ci === 0) {
-            $('#c8').removeClass('purple').addClass(colorArray[ci]);
+            $('#c8').removeClass('red').addClass(colorArray[ci]);
                     ci++;
         }
         else {
             $('#c8').removeClass(colorArray[ci-1]).addClass(colorArray[ci]);
-            if (ci < 5) {
+            if (ci < 6) {
                 ci++;
             }
             else {
@@ -873,12 +902,12 @@ function roundEight() {
     });
     $('#d8').click(function() {
         if (di === 0) {
-            $('#d8').removeClass('purple').addClass(colorArray[di]);
+            $('#d8').removeClass('red').addClass(colorArray[di]);
                     di++;
         }
         else {
             $('#d8').removeClass(colorArray[di-1]).addClass(colorArray[di]);
-            if (di < 5) {
+            if (di < 6) {
                 di++;
             }
             else {
@@ -921,6 +950,7 @@ function roundEight() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
             alert("You got " + (ar + br + cr + dr) + " correct.");
