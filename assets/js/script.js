@@ -9,10 +9,17 @@ for (let i=0; i < 4; i++) {
     x = Math.floor(Math.random() * 5);
     secretCode += x;
 }
-    var aa = secretCode[0];
-    var bb = secretCode[1];
-    var cc = secretCode[2];
-    var dd = secretCode[3];
+var aa = secretCode[0];
+var bb = secretCode[1];
+var cc = secretCode[2];
+var dd = secretCode[3];
+
+var ar = 0;
+var br = 0;
+var cr = 0;
+var dr = 0;
+
+    
 // runs game on click of start-game button. creates a secret code in numbers which will be checked against as player attempts to break the code.
 //0=red, 1=yellow, 2=orange, 3=green, 4=blue, 5=purple
 //then calls roundOne and makes breaker button visible.
@@ -96,23 +103,44 @@ function roundOne() {
         }
     });
     $('#breaker').click(function() {
-        alert(aa);
-        alert(ai);
         if (ai == aa) {
-                $('#a1').parent().css('background-color', 'green');
-                if ( bi == bb) {
-                    $('#b1').parent().css('background-color', 'green');
-                    if ( ci == cc) {
-                        $('#c1').parent().css('background-color', 'green');
-                        if ( di == dd) {
-                            $('#d1').parent().css('background-color', 'green');
-                            alert("YOU WIN!!!!");
-                        }
-                    }
-                }
-            }
+            $('#a1').parent().css('background-color', 'green');
+            ar = 1;
+        }
         else {
-            alert("NOT TODAY!");
+            $('#a1').parent().css('background-color', 'red');
+            ar = 0;
+        }
+        if (bi == bb) {
+            $('#b1').parent().css('background-color', 'green');
+            br = 1;
+        }
+        else {
+            $('#b1').parent().css('background-color', 'red');
+            br = 0;
+        }
+        if (ci == cc) {
+            $('#c1').parent().css('background-color', 'green');
+            cr = 1;
+        }
+        else {
+            $('#c1').parent().css('background-color', 'red');
+            cr = 0;
+        }
+        if (di == dd) {
+            $('#d1').parent().css('background-color', 'green');
+            dr = 1;
+        }
+        else {
+            $('#d1').parent().css('background-color', 'red');
+            dr = 0;
+        }
+        if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
+            alert("You Win!!!");
+        } 
+        else {
+            alert("You got " + (ar + br + cr + dr) + " correct.");
+            roundTwo();
         }
     });
 };
