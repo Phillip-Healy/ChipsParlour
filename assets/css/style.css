@@ -198,7 +198,7 @@ body {
     text-align: center;
 }
 
-#breaker {
+.breaker {
     height: 60px;
     width: 100px;
     border-radius: 25%;
@@ -212,7 +212,134 @@ body {
     visibility: hidden;
 }
 
-#breaker:hover {
+.breaker:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerTwo {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerTwo:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerThree {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerThree:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerFour {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+    visibility: hidden;
+}
+
+.breakerFour:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerFive {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerFive:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerSix {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerSix:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerSeven {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerSeven:hover {
+    background-color: antiquewhite;
+    color: #601a4a;
+}
+
+.breakerEight {
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #601a4a;
+    color: antiquewhite;
+    transition: all 0.5s;
+    font-size: 22px;
+    position: fixed;
+    right: 20%;
+    top: 25%;
+}
+
+.breakerEight:hover {
     background-color: antiquewhite;
     color: #601a4a;
 }
