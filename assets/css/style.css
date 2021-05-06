@@ -361,9 +361,24 @@ body {
     position: fixed;
     right: 20%;
     top: 25%;
+    text-decoration: none;
 }
 
 #retry:hover {
     background-color: antiquewhite;
     color: #ff5103;
+}
+
+#gameAnswer {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#gameAnswer th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    min-height: 100px;
 }

@@ -21,7 +21,7 @@ var dr = 0;
 
     
 // runs game on click of start-game button. creates a secret code in numbers which will be checked against as player attempts to break the code.
-//0=red, 1=yellow, 2=orange, 3=green, 4=blue, 5=purple
+//1=red, 2=yellow, 3=orange, 4=green, 5=blue, 0=purple
 //then calls roundOne and makes breaker button visible.
 function runGame() {
     $('#game-container').html('<table id="gameBoard"><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td><div class="gamePeg peg1" id="a1"></div></td><td><div class="gamePeg peg1" id="b1"></div></td><td><div class="gamePeg peg1" id="c1"></div></td><td><div class="gamePeg peg1" id="d1"></div></td></tr><tr><td><div class="gamePeg peg2" id="a2"></div></td><td><div class="gamePeg peg2" id="b2"></div></td><td><div class="gamePeg peg2" id="c2"></div></td><td><div class="gamePeg peg2" id="d2"></div></td></tr><tr><td><div class="gamePeg" id="a3"></div></td><td><div class="gamePeg" id="b3"></div></td><td><div class="gamePeg" id="c3"></div></td><td><div class="gamePeg" id="d3"></div></td></tr><tr><td><div class="gamePeg" id="a4"></div></td><td><div class="gamePeg" id="b4"></div></td><td><div class="gamePeg" id="c4"></div></td><td><div class="gamePeg" id="d4"></div></td></tr><tr><td><div class="gamePeg" id="a5"></div></td><td><div class="gamePeg" id="b5"></div></td><td><div class="gamePeg" id="c5"></div></td><td><div class="gamePeg" id="d5"></div></td></tr><tr><td><div class="gamePeg" id="a6"></div></td><td><div class="gamePeg" id="b6"></div></td><td><div class="gamePeg" id="c6"></div></td><td><div class="gamePeg" id="d6"></div></td></tr><tr><td><div class="gamePeg" id="a7"></div></td><td><div class="gamePeg" id="b7"></div></td><td><div class="gamePeg" id="c7"></div></td><td><div class="gamePeg" id="d7"></div></td></tr><tr><td><div class="gamePeg" id="a8"></div></td><td><div class="gamePeg" id="b8"></div></td><td><div class="gamePeg" id="c8"></div></td><td><div class="gamePeg" id="d8"></div></td></tr></table>');
@@ -38,14 +38,14 @@ function roundOne() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a1').addClass(colorArray[0]);
-    $('#b1').addClass(colorArray[0]);
-    $('#c1').addClass(colorArray[0]);
-    $('#d1').addClass(colorArray[0]);
+    $('#a1').addClass(colorArray[5]);
+    $('#b1').addClass(colorArray[5]);
+    $('#c1').addClass(colorArray[5]);
+    $('#d1').addClass(colorArray[5]);
 
     $('#a1').click(function() {
         if (ai === 0) {
-            $('#a1').removeClass('red').addClass(colorArray[ai]);
+            $('#a1').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -60,7 +60,7 @@ function roundOne() {
     });
     $('#b1').click(function() {
         if (bi === 0) {
-            $('#b1').removeClass('red').addClass(colorArray[bi]);
+            $('#b1').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -75,7 +75,7 @@ function roundOne() {
     });
     $('#c1').click(function() {
         if (ci === 0) {
-            $('#c1').removeClass('red').addClass(colorArray[ci]);
+            $('#c1').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -90,7 +90,7 @@ function roundOne() {
     });
     $('#d1').click(function() {
         if (di === 0) {
-            $('#d1').removeClass('red').addClass(colorArray[di]);
+            $('#d1').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -154,14 +154,14 @@ function roundTwo() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a2').addClass(colorArray[0]);
-    $('#b2').addClass(colorArray[0]);
-    $('#c2').addClass(colorArray[0]);
-    $('#d2').addClass(colorArray[0]);
+    $('#a2').addClass(colorArray[5]);
+    $('#b2').addClass(colorArray[5]);
+    $('#c2').addClass(colorArray[5]);
+    $('#d2').addClass(colorArray[5]);
 
     $('#a2').click(function() {
         if (ai === 0) {
-            $('#a2').removeClass('red').addClass(colorArray[ai]);
+            $('#a2').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -176,7 +176,7 @@ function roundTwo() {
     });
     $('#b2').click(function() {
         if (bi === 0) {
-            $('#b2').removeClass('red').addClass(colorArray[bi]);
+            $('#b2').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -191,7 +191,7 @@ function roundTwo() {
     });
     $('#c2').click(function() {
         if (ci === 0) {
-            $('#c2').removeClass('red').addClass(colorArray[ci]);
+            $('#c2').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -206,7 +206,7 @@ function roundTwo() {
     });
     $('#d2').click(function() {
         if (di === 0) {
-            $('#d2').removeClass('red').addClass(colorArray[di]);
+            $('#d2').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -270,14 +270,14 @@ function roundThree() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a3').addClass(colorArray[0]);
-    $('#b3').addClass(colorArray[0]);
-    $('#c3').addClass(colorArray[0]);
-    $('#d3').addClass(colorArray[0]);
+    $('#a3').addClass(colorArray[5]);
+    $('#b3').addClass(colorArray[5]);
+    $('#c3').addClass(colorArray[5]);
+    $('#d3').addClass(colorArray[5]);
 
     $('#a3').click(function() {
         if (ai === 0) {
-            $('#a3').removeClass('red').addClass(colorArray[ai]);
+            $('#a3').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -292,7 +292,7 @@ function roundThree() {
     });
     $('#b3').click(function() {
         if (bi === 0) {
-            $('#b3').removeClass('red').addClass(colorArray[bi]);
+            $('#b3').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -307,7 +307,7 @@ function roundThree() {
     });
     $('#c3').click(function() {
         if (ci === 0) {
-            $('#c3').removeClass('red').addClass(colorArray[ci]);
+            $('#c3').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -322,7 +322,7 @@ function roundThree() {
     });
     $('#d3').click(function() {
         if (di === 0) {
-            $('#d3').removeClass('red').addClass(colorArray[di]);
+            $('#d3').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -386,14 +386,14 @@ function roundFour() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a4').addClass(colorArray[0]);
-    $('#b4').addClass(colorArray[0]);
-    $('#c4').addClass(colorArray[0]);
-    $('#d4').addClass(colorArray[0]);
+    $('#a4').addClass(colorArray[5]);
+    $('#b4').addClass(colorArray[5]);
+    $('#c4').addClass(colorArray[5]);
+    $('#d4').addClass(colorArray[5]);
 
     $('#a4').click(function() {
         if (ai === 0) {
-            $('#a4').removeClass('red').addClass(colorArray[ai]);
+            $('#a4').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -408,7 +408,7 @@ function roundFour() {
     });
     $('#b4').click(function() {
         if (bi === 0) {
-            $('#b4').removeClass('red').addClass(colorArray[bi]);
+            $('#b4').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -423,7 +423,7 @@ function roundFour() {
     });
     $('#c4').click(function() {
         if (ci === 0) {
-            $('#c4').removeClass('red').addClass(colorArray[ci]);
+            $('#c4').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -438,7 +438,7 @@ function roundFour() {
     });
     $('#d4').click(function() {
         if (di === 0) {
-            $('#d4').removeClass('red').addClass(colorArray[di]);
+            $('#d4').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -502,14 +502,14 @@ function roundFive() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a5').addClass(colorArray[0]);
-    $('#b5').addClass(colorArray[0]);
-    $('#c5').addClass(colorArray[0]);
-    $('#d5').addClass(colorArray[0]);
+    $('#a5').addClass(colorArray[5]);
+    $('#b5').addClass(colorArray[5]);
+    $('#c5').addClass(colorArray[5]);
+    $('#d5').addClass(colorArray[5]);
 
     $('#a5').click(function() {
         if (ai === 0) {
-            $('#a5').removeClass('red').addClass(colorArray[ai]);
+            $('#a5').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -524,7 +524,7 @@ function roundFive() {
     });
     $('#b5').click(function() {
         if (bi === 0) {
-            $('#b5').removeClass('red').addClass(colorArray[bi]);
+            $('#b5').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -539,7 +539,7 @@ function roundFive() {
     });
     $('#c5').click(function() {
         if (ci === 0) {
-            $('#c5').removeClass('red').addClass(colorArray[ci]);
+            $('#c5').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -554,7 +554,7 @@ function roundFive() {
     });
     $('#d5').click(function() {
         if (di === 0) {
-            $('#d5').removeClass('red').addClass(colorArray[di]);
+            $('#d5').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -618,14 +618,14 @@ function roundSix() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a6').addClass(colorArray[0]);
-    $('#b6').addClass(colorArray[0]);
-    $('#c6').addClass(colorArray[0]);
-    $('#d6').addClass(colorArray[0]);
+    $('#a6').addClass(colorArray[5]);
+    $('#b6').addClass(colorArray[5]);
+    $('#c6').addClass(colorArray[5]);
+    $('#d6').addClass(colorArray[5]);
 
     $('#a6').click(function() {
         if (ai === 0) {
-            $('#a6').removeClass('red').addClass(colorArray[ai]);
+            $('#a6').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -640,7 +640,7 @@ function roundSix() {
     });
     $('#b6').click(function() {
         if (bi === 0) {
-            $('#b6').removeClass('red').addClass(colorArray[bi]);
+            $('#b6').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -655,7 +655,7 @@ function roundSix() {
     });
     $('#c6').click(function() {
         if (ci === 0) {
-            $('#c6').removeClass('red').addClass(colorArray[ci]);
+            $('#c6').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -670,7 +670,7 @@ function roundSix() {
     });
     $('#d6').click(function() {
         if (di === 0) {
-            $('#d6').removeClass('red').addClass(colorArray[di]);
+            $('#d6').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -734,14 +734,14 @@ function roundSeven() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a7').addClass(colorArray[0]);
-    $('#b7').addClass(colorArray[0]);
-    $('#c7').addClass(colorArray[0]);
-    $('#d7').addClass(colorArray[0]);
+    $('#a7').addClass(colorArray[5]);
+    $('#b7').addClass(colorArray[5]);
+    $('#c7').addClass(colorArray[5]);
+    $('#d7').addClass(colorArray[5]);
 
     $('#a7').click(function() {
         if (ai === 0) {
-            $('#a7').removeClass('red').addClass(colorArray[ai]);
+            $('#a7').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -756,7 +756,7 @@ function roundSeven() {
     });
     $('#b7').click(function() {
         if (bi === 0) {
-            $('#b7').removeClass('red').addClass(colorArray[bi]);
+            $('#b7').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -771,7 +771,7 @@ function roundSeven() {
     });
     $('#c7').click(function() {
         if (ci === 0) {
-            $('#c7').removeClass('red').addClass(colorArray[ci]);
+            $('#c7').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -786,7 +786,7 @@ function roundSeven() {
     });
     $('#d7').click(function() {
         if (di === 0) {
-            $('#d7').removeClass('red').addClass(colorArray[di]);
+            $('#d7').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -850,14 +850,14 @@ function roundEight() {
     var bi = 0;
     var ci = 0;
     var di = 0;
-    $('#a8').addClass(colorArray[0]);
-    $('#b8').addClass(colorArray[0]);
-    $('#c8').addClass(colorArray[0]);
-    $('#d8').addClass(colorArray[0]);
+    $('#a8').addClass(colorArray[5]);
+    $('#b8').addClass(colorArray[5]);
+    $('#c8').addClass(colorArray[5]);
+    $('#d8').addClass(colorArray[5]);
 
     $('#a8').click(function() {
         if (ai === 0) {
-            $('#a8').removeClass('red').addClass(colorArray[ai]);
+            $('#a8').removeClass('purple').addClass(colorArray[ai]);
                     ai++;
         }
         else {
@@ -872,7 +872,7 @@ function roundEight() {
     });
     $('#b8').click(function() {
         if (bi === 0) {
-            $('#b8').removeClass('red').addClass(colorArray[bi]);
+            $('#b8').removeClass('purple').addClass(colorArray[bi]);
                     bi++;
         }
         else {
@@ -887,7 +887,7 @@ function roundEight() {
     });
     $('#c8').click(function() {
         if (ci === 0) {
-            $('#c8').removeClass('red').addClass(colorArray[ci]);
+            $('#c8').removeClass('purple').addClass(colorArray[ci]);
                     ci++;
         }
         else {
@@ -902,7 +902,7 @@ function roundEight() {
     });
     $('#d8').click(function() {
         if (di === 0) {
-            $('#d8').removeClass('red').addClass(colorArray[di]);
+            $('#d8').removeClass('purple').addClass(colorArray[di]);
                     di++;
         }
         else {
@@ -962,11 +962,10 @@ function roundEight() {
 
 function gameOver() {
     var sollution = ['purple', 'red', 'yellow', 'orange', 'green', 'blue'];
-    var answer = [];
-    answer += sollution[aa];
-    answer += sollution[bb];
-    answer += sollution[cc];
-    answer += sollution[dd];
-    alert("Sorry, you didn't win this time. The correct sollution was: " + answer[0] + " " + answer[1] + " " + answer[2] + " " + answer[3] + ". Try Again!");
+    $('#game-container').html('<table id="gameAnswer"><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td><div class="gamePeg" id="aa"></div></td><td><div class="gamePeg" id="ba"></div></td><td><div class="gamePeg" id="ca"></div></td><td><div class="gamePeg" id="da"></div></td></tr></table>');
+    $('#aa').addClass(sollution[aa]);
+    $('#ba').addClass(sollution[bb]);
+    $('#ca').addClass(sollution[cc]);
+    $('#da').addClass(sollution[dd]);
     $('#post-game').html('<a href="codebreaker.html" id="retry">Try Again?</a>');
 }
