@@ -3,27 +3,38 @@ $('#tutorial').click(function() {
 });
 
 $('#start-game').click(runGame);
-var colorArray = ['red','yellow','orange','green','blue','purple'];
-
+var colorArray = ['red','yellow','orange','green','blue','purple']; // colorArray idea given by igor_ci on interactive-frontend board of slack.
+var secretCode = [];
+for (let i=0; i < 4; i++) {
+    x = Math.floor(Math.random() * 5);
+    secretCode += x;
+}
+    var aa = secretCode[0];
+    var bb = secretCode[1];
+    var cc = secretCode[2];
+    var dd = secretCode[3];
 // runs game on click of start-game button. creates a secret code in numbers which will be checked against as player attempts to break the code.
 //0=red, 1=yellow, 2=orange, 3=green, 4=blue, 5=purple
-//then calls roundOne to allow player to change line one nodes and check them against secret code.
+//then calls roundOne and makes breaker button visible.
 function runGame() {
     $('#game-container').html('<table id="gameBoard"><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td><div class="gamePeg peg1" id="a1"></div></td><td><div class="gamePeg peg1" id="b1"></div></td><td><div class="gamePeg peg1" id="c1"></div></td><td><div class="gamePeg peg1" id="d1"></div></td></tr><tr><td><div class="gamePeg peg2" id="a2"></div></td><td><div class="gamePeg peg2" id="b2"></div></td><td><div class="gamePeg peg2" id="c2"></div></td><td><div class="gamePeg peg2" id="d2"></div></td></tr><tr><td><div class="gamePeg" id="a3"></div></td><td><div class="gamePeg" id="b3"></div></td><td><div class="gamePeg" id="c3"></div></td><td><div class="gamePeg" id="d3"></div></td></tr><tr><td><div class="gamePeg" id="a4"></div></td><td><div class="gamePeg" id="b4"></div></td><td><div class="gamePeg" id="c4"></div></td><td><div class="gamePeg" id="d4"></div></td></tr><tr><td><div class="gamePeg" id="a5"></div></td><td><div class="gamePeg" id="b5"></div></td><td><div class="gamePeg" id="c5"></div></td><td><div class="gamePeg" id="d5"></div></td></tr><tr><td><div class="gamePeg" id="a6"></div></td><td><div class="gamePeg" id="b6"></div></td><td><div class="gamePeg" id="c6"></div></td><td><div class="gamePeg" id="d6"></div></td></tr><tr><td><div class="gamePeg" id="a7"></div></td><td><div class="gamePeg" id="b7"></div></td><td><div class="gamePeg" id="c7"></div></td><td><div class="gamePeg" id="d7"></div></td></tr><tr><td><div class="gamePeg" id="a8"></div></td><td><div class="gamePeg" id="b8"></div></td><td><div class="gamePeg" id="c8"></div></td><td><div class="gamePeg" id="d8"></div></td></tr></table>');
-    var secretCode = [];
-    for (let i=0; i < 4; i++) {
-        x = Math.floor(Math.random() * 8);
-        secretCode += x;
-    }
+
     alert(secretCode);
     roundOne();
+    $('#breaker').css('visibility', 'visible');
 };
 
+
+// allows player to interact with line one of buttons to guess against secret code when they submit via breaker button.
+//breaker button should not allowplayers to submit if they have not changed all pegs. 
+//Player should not be able to change colors of pegs on different lines.
 function roundOne() {
     var ai = 0;
     var bi = 0;
     var ci = 0;
     var di = 0;
+
+
     $('#a1').click(function() {
         if (ai === 0) {
             $('#a1').removeClass('purple').addClass(colorArray[ai]);
@@ -82,6 +93,26 @@ function roundOne() {
             else {
                 di = 0;
             }
+        }
+    });
+    $('#breaker').click(function() {
+        alert(aa);
+        alert(ai);
+        if (ai == aa) {
+                $('#a1').parent().css('background-color', 'green');
+                if ( bi == bb) {
+                    $('#b1').parent().css('background-color', 'green');
+                    if ( ci == cc) {
+                        $('#c1').parent().css('background-color', 'green');
+                        if ( di == dd) {
+                            $('#d1').parent().css('background-color', 'green');
+                            alert("YOU WIN!!!!");
+                        }
+                    }
+                }
+            }
+        else {
+            alert("NOT TODAY!");
         }
     });
 };

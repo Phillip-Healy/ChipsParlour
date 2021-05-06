@@ -209,6 +209,7 @@ body {
     position: fixed;
     right: 20%;
     top: 25%;
+    visibility: hidden;
 }
 
 #breaker:hover {
