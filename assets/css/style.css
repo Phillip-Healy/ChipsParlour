@@ -382,3 +382,28 @@ body {
     min-width: 100px;
     min-height: 100px;
 }
+
+.how-to-box {
+    background-color: antiquewhite;
+    color: #601a4a;
+    width: 200px;
+    height: 200px:
+}
+
+#how-to-one {
+    position: fixed;
+    top: 25%;
+    right: 20%;
+}
+
+#how-to-two {
+    position: fixed;
+    top: 50%;
+    right: 20%;
+}
+
+#how-to-three {
+    position: fixed;
+    top: 75%;
+    right: 20%;
+}
