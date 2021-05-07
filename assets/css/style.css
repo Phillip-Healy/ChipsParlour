@@ -406,3 +406,43 @@ body {
     top: 75%;
     right: 20%;
 }
+
+/* ------------- contact page */
+
+.center-form {
+    padding-top: 10%;
+    margin: 0 auto;
+    max-width: 70%;
+    background-color: whitesmoke;
+}
+
+#contact-btn {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 100px;
+    border-radius: 25%;
+    color: whitesmoke;
+    background-color: #ff5103;
+}
+
+#contact-form {
+    display: grid;
+}
+
+#contact-form input, textarea {
+    color: #601a4a;
+    font-size: 22px;
+}
+
+#contact-response {
+    width: 40%;
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin: 0 auto;
+    max-width: 70%;
+    background-color: antiquewhite;
+    color: #601a4a;
+    font-size: 28px;
+}

@@ -1,8 +1,15 @@
 $('#tutorial').click(function() {
-    $('#how-to').html("<img src='assets/images/CodeBreakerPlay.png' alt='code breaker game' role='presentation'>Code Breaker</img>");
+    $('#how-to').html("<img src='assets/images/codeBreakerDemo2.png' alt='code breaker game' role='presentation'>Code Breaker</img>");
     $('#how-to-one').html("<p>Click the nodes to change their colours.</p>");
     $('#how-to-two').html("<p>6 colours to choose from. That's 1296 possible codes!</p>");
     $('#how-to-three').html("<p>Correct nodes light up green. Can you break the code in 8 tries?!</p>");
+});
+
+$('#contact-form').submit((e) => {e.preventDefault() 
+    let name = $('#contact-form input[name=name]').val();
+    let mail = $('#contact-form input[name=email]').val();
+    let msg = $('#contact-form textarea[name=message]').val();
+    $('.center-form').html("<p id='contact-response'>Thank you, " + name + ".<br> We see you sent us: " + msg + ". <br>From: " + mail + "<br>But this form is for education purposes only, and we store none of your data!<br><br> Thank you for checking out my project!</p>");
 });
 
 $('#start-game').click(runGame);
@@ -111,7 +118,7 @@ function roundOne() {
             }
         }
     });
-    $('.breaker').click(function(event) {
+    $('.breaker').click(function() {
         if (ai == aa) {
             $('#a1').parent().css('background-color', 'green');
             ar = 1;
