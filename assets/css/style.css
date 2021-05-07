@@ -446,3 +446,138 @@ body {
     color: #601a4a;
     font-size: 28px;
 }
+
+/* ---------- media */
+
+/* ---------- tablet */
+
+@media screen and (max-width: 1393px) {
+
+        .breaker {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerTwo {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerThree {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerFour {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerFive {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerSix {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerSeven {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    .breakerEight {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+    #retry {
+        position: fixed;
+        right: 5%;
+        top: 20%;
+        visibility: hidden;
+    }
+
+}
+/* --------- mobile */
+
+@media screen and (max-width: 943px) {
+
+    #nav {
+        list-style-type: none;
+        width: 60%;
+        min-width: 100px;
+        background-color: rgb(72, 74, 77);
+        padding: 0;
+        display: inline-flex;
+        position: inherit;
+        right: auto;
+    }
+
+    #nav li {
+        margin-right: 15px;
+    }
+
+    #how-to {
+        height: 150px;
+        width: 150px;
+    }
+
+    #how-to-one {
+        position: inherit;
+        width: 160px;
+        margin-left: 80%;
+    }
+
+    #how-to-two {
+        position: inherit;
+        width: 160px;
+        margin-left: 80%;
+    }
+    #how-to-three {
+        position: inherit;
+        width: 160px;
+        margin-left: 80%;
+    }
+
+    #game-container {
+        margin-left: 0;
+        max-width: 60%;
+    }
+
+    #start-game {
+        margin-left: 80%;
+    }
+
+    #how-to {
+        margin-left: 88%;
+    }
+
+    .gamePeg {
+        width: 70px;
+        height: 70px;
+    }
+
+    #gameBoard td {
+        width: 70px;
+        height: 70px;
+    }
+}

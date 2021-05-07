@@ -1,5 +1,5 @@
 $('#tutorial').click(function() {
-    $('#how-to').html("<img src='assets/images/codeBreakerDemo2.png' alt='code breaker game' role='presentation'>Code Breaker</img>");
+    $('#how-to').html("<img src='assets/images/codeBreakerDemo2.png' alt='code breaker game' role='presentation' id='tutorial-image'></img>");
     $('#how-to-one').html("<p>Click the nodes to change their colours.</p>");
     $('#how-to-two').html("<p>6 colours to choose from. That's 1296 possible codes!</p>");
     $('#how-to-three').html("<p>Correct nodes light up green. Can you break the code in 8 tries?!</p>");
@@ -153,6 +153,7 @@ function roundOne() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("AMAZING! You won first try!!!");
+            $('.breaker').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -269,6 +270,7 @@ function roundTwo() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerTwo').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -385,6 +387,7 @@ function roundThree() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerThree').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -501,6 +504,7 @@ function roundFour() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerFour').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -617,6 +621,7 @@ function roundFive() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerFive').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -733,6 +738,7 @@ function roundSix() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerSix').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -849,6 +855,7 @@ function roundSeven() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerSeven').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
@@ -965,6 +972,7 @@ function roundEight() {
         }
         if (ar == 1 && br == 1 && cr == 1 && dr == 1) {
             alert("You Win!!!");
+            $('.breakerEight').css('visibility', 'hidden');
             $('#post-game').html('<a href="codebreaker.html" id="retry">Play Again?</a>');
         } 
         else {
